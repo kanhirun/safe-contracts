@@ -118,6 +118,11 @@ if (NODE_URL) {
   userConfig.networks!!.custom = {
     ...sharedNetworkConfig,
     url: NODE_URL,
+    /* 
+     Warning: don't do this in production; below is a test key
+     Provide the private key for the account you wish to deploy with
+     */
+    accounts: ['055f0d3a83c516835680d6f0a7ed1c4905a5c1442f8b07a510aa442770d401a3']
   }
 }
 export default userConfig
